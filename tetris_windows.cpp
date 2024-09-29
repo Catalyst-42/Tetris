@@ -160,7 +160,7 @@ void coutField() {
     }
 
     screen_buffer[ScreenX * ScreenY - 1] = '\0';
-    WriteConsoleOutputCharacter(hConsole, screen_buffer, ScreenX * ScreenY, { 0,0 }, &dwBytesWritten);
+    WriteConsoleOutputCharacterW(hConsole, screen_buffer, ScreenX * ScreenY, { 0,0 }, &dwBytesWritten);
 }
 
 void setFigure() {
